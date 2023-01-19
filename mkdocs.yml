@@ -1,0 +1,51 @@
+site_name: Brandon
+theme:
+  name: material
+  logo: assets/logo.svg
+  favicon: assets/favicon.png
+  features:
+  - navigation.instant
+  - navigation.tabs
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+      primary: white
+      accent: light blue
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+      primary: white
+      accent: light blue
+repo_url: https://github.com/wmorellato/brandon
+extra_css:
+  - stylesheets/extra.css
+nav:
+- Home: index.md
+- Reference:
+  - Commands:
+    - generate:
+      - project: reference/project.md
+      - docs: reference/docs.md
+      - summary: reference/summary.md
+    - version: reference/version.md
+  - Schemas:
+    - Enums: reference/enums.md
+  - Builders:
+    - Python: reference/builders/python.md
+    - Documentation: reference/builders/docs.md
+- Specification:
+  - Reference: specification/spec.md
+  - Examples: specification/examples.md
+markdown_extensions:
+- attr_list
+- pymdownx.emoji:
+    emoji_index: !!python/name:materialx.emoji.twemoji ''
+    emoji_generator: !!python/name:materialx.emoji.to_svg ''
+- pymdownx.highlight:
+    anchor_linenums: true
+- pymdownx.inlinehilite
+- pymdownx.snippets
+- pymdownx.superfences
