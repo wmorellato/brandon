@@ -4,7 +4,7 @@ Generate the project structure and the command line interface from the CLI speci
 
 ## Usage
 
-`$ brandon generate project <filename> [-f|--overwrite] [-l|--language] [-o|--output_path]`
+`$ brandon generate project <filename> [-f|--overwrite] [-l|--language] [-o|--output-path]`
 
 ## Arguments
 
@@ -18,5 +18,5 @@ Generate the project structure and the command line interface from the CLI speci
 |---|---|---|---|---|
 | `overwrite` | flag | If there is a project folder in the path pointed by `output-path` option, overwrites its contents. |  |  |
 | `language` | string | Overwrite the default output language, which is defined from the first language provided in the `languages` key. |  | java |
-| `output_path` | string | Set the output path for the project folder. | Current directory |  |
+| `output-path` | string | Set the output path for the project folder. | Current directory |  |
 

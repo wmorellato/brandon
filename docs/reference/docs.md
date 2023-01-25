@@ -4,7 +4,7 @@ Generate the project documentation using MkDocs from the CLI specification file 
 
 ## Usage
 
-`$ brandon generate docs <filename> [-o|--output_path]`
+`$ brandon generate docs <filename> [-o|--output-path]`
 
 ## Arguments
 
@@ -16,5 +16,5 @@ Generate the project documentation using MkDocs from the CLI specification file 
 
 | *Option* | *Type* | *Description* | *Default* | *Example* |
 |---|---|---|---|---|
-| `output_path` | string | Set the output path for the documentation. | Current directory |  |
+| `output-path` | string | Set the output path for the documentation. | Current directory |  |
 
