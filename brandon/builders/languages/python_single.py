@@ -1,9 +1,6 @@
 import os
-import re
 import logging
-import keyword
 
-from brandon.md_utils import sandwich
 from brandon.builders.languages.python import Module, Decorator
 
 logger = logging.getLogger()
@@ -11,8 +8,7 @@ logger.setLevel(logging.INFO)
 
 
 class Builder:
-    """Builder for single-file Python scripts.
-    """
+    """Builder for single-file Python scripts."""
 
     def __init__(self, app, output_path) -> None:
         self.app = app
@@ -102,7 +98,7 @@ class Builder:
             params.append(o.name)
 
         return params
-    
+
     def _create_module(self):
         script_mod = Module(self.app.exec, path=self.output_path, imports=["click"])
 
