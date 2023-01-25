@@ -26,7 +26,6 @@ class Project:
             raise Exception(f"Unsupported language `{self.language}`")
 
         if os.path.exists(self.builder.project_root) and not self.overwrite:
-            print(self.builder.project_root)
             raise Exception(
                 "Output folder already exists. Either use the flag `--overwrite` to overwrite the contents of this directory or change the app version in your `cli.yml`."
             )

@@ -17,6 +17,7 @@ class Builder:
     def __init__(self, app, output_path) -> None:
         self.app = app
         self.output_path = output_path
+        self.project_root = os.path.join(output_path, f"{self.app.exec}.py")
 
     def build(self):
         self._create_module()
