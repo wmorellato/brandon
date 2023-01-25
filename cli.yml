@@ -1,5 +1,5 @@
 name: Brandon
-version: 0.1.0
+version: 0.2.0
 description: An utility to create command line applications from their YAML specifications.
 tags: ['cli', 'stub', 'docs']
 authors:
@@ -12,9 +12,10 @@ languages: ['python']
 schemas:
   enums:
     languages:
-      description: Supported languages to create application stubs.
+      description: Supported builders to create application stubs.
       items:
         python: python
+        python_script: python_single
     python-arg-libs:
       description: Supported Python libraries for parsing command line arguments.
       items:
@@ -54,5 +55,10 @@ cli:
             default: Current directory
       summary:
         description: Generate a summary of the command line interface, to be used somewhere else, from the CLI specification file pointed by FILENAME.
+  list:
+    description: List objects.
+    commands:
+      builders:
+        description: List the available builders for stubs and documentation.
   version:
     description: Show the version and exit.
