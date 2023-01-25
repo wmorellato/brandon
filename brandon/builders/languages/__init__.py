@@ -1,4 +1,4 @@
-__all__ = ["PythonBuilder", "BashBuilder"]
+__all__ = ["PythonBuilder", "PythonScriptBuilder"]
 
 from .python import Builder as PythonBuilder
-from .bash import Builder as BashBuilder
+from .python_single import Builder as PythonScriptBuilder

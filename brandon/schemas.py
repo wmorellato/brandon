@@ -5,6 +5,7 @@ class Languages(Enum):
     """Supported languages to create application stubs."""
 
     PYTHON = "python"
+    PYTHON_SCRIPT = "python_single"
 
     @classmethod
     def is_supported(cls, value):

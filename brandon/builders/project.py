@@ -6,6 +6,7 @@ from brandon.schemas import Languages
 
 BUILDER_MAP = {
     Languages.PYTHON: PythonBuilder,
+    Languages.PYTHON_SCRIPT: PythonScriptBuilder,
 }
 
 
