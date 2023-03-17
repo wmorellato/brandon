@@ -11,7 +11,7 @@ repository = "https://github.com/wmorellato/brandon"
 brandon = "brandon.main:cli"
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3.10"
 click = "^8.1"
 PyYAML = "^6.0"
 

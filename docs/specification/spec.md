@@ -1,4 +1,4 @@
-# Specification - 0.1.0
+# Specification - 0.0.2
 
 Specification to describe a machine-readeable structure of a command line application. The CLI application description can be passed to Brandon to create a stub command line application in different languages and also automatically build documentation.
 
@@ -139,12 +139,12 @@ cli:
 
 An object that describes a group of related commands. Note that it is not allowed to nest groups of commands.
 
-| Field         | Type                                  | Description                                                         |
-|---------------|---------------------------------------|---------------------------------------------------------------------|
-| `description` | string                                | A short description to be applied to all commands under this group. |
-| `arguments`   | [Parameter Object](#parameter-object) | The arguments common to all commands under this group               |
-| `options`     | [Parameter Object](#parameter-object) | The options common to all commands under this group.                |
-| `commands`*   | [Command Object](#command-object)     | Mapping of command names and their definitions.                     |
+| Field          | Type                                  | Description                                                         |
+|----------------|---------------------------------------|---------------------------------------------------------------------|
+| `description`* | string                                | A short description to be applied to all commands under this group. |
+| `arguments`    | [Parameter Object](#parameter-object) | The arguments common to all commands under this group               |
+| `options`      | [Parameter Object](#parameter-object) | The options common to all commands under this group.                |
+| `commands`*    | [Command Object](#command-object)     | Mapping of command names and their definitions.                     |
 
 ### Example
 
@@ -180,12 +180,11 @@ cli:
 
 This object defines a command that maps to a single operation in the application. The command MAY have positional arguments and options to alter its behavior.
 
-| Field         | Type                                  | Description                                                                |
-|---------------|---------------------------------------|----------------------------------------------------------------------------|
-| `description` | string                                | A short description for this specific operation.                           |
-| `notes`       | string                                | Additional notes for this command. Mainly to be used in the documentation. |
-| `arguments`   | [Parameter Object](#parameter-object) | The positional arguments used by this command.                             |
-| `options`     | [Parameter Object](#parameter-object) | The options used by this command.                                          |
+| Field          | Type                                  | Description                                                                |
+|----------------|---------------------------------------|----------------------------------------------------------------------------|
+| `description`* | string                                | A short description for this specific operation.                           |
+| `arguments`    | [Parameter Object](#parameter-object) | The positional arguments used by this command.                             |
+| `options`      | [Parameter Object](#parameter-object) | The options used by this command.                                          |
 
 ### Example
 
